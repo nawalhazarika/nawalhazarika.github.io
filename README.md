@@ -5,5 +5,5 @@ Conversely if $A=X\smallsetminus\{a\}$ is compact then it will be closed in $X$ 
 
 # Table
 |Col 1| Col 2|
---------------
 |R2 | R2|
+---------
