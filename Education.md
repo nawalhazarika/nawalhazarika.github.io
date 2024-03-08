@@ -1,3 +1,3 @@
 layout: page
-title: "Education"
+title: "Education.."
 permalink: /education
