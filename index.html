@@ -12,6 +12,11 @@
 <script type="text/javascript" src="http://use.typekit.net/hzk6omf.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <script type="text/javascript">
+  function loadcourse(){
+    var course = window.top.location.hash.substr(1);  
+    var site = "about.html";
+    document.getElementById('ifram').setAttribute('src', site);
+  }
 </script>
 <script>
   function resizeIframe(obj) {
