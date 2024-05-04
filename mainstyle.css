@@ -14,16 +14,11 @@
 }
 
 body {
-	display: grid;
-	grid-template-columns: 0.7fr 2fr;	
-	grid-template-rows: 22vh 78vh;
 	margin: 6.5% 10% 2% 10%
 	width: 100%;
 }
 
 header {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
     	margin: 6.5% 10% 2% 10%;
 }
 
