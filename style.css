@@ -26,8 +26,8 @@ body {
     align-items: center;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(17px);
-    --webkit-backdrop-filter: blur(17px);
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
     border-right: 1px solid rgba(255, 255, 255, 0.7);
     transition: width 0.5s ease;
 }
