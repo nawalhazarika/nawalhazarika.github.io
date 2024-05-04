@@ -40,11 +40,11 @@ body {
     color: #000;
     display: flex;
     align-items: center;
-    padding: 4%;
+    padding: 25px 10px 15px;
 }
 
 .logo img {
-    width: 4%;
+    width: 10%;
 }
 
 .logo h2 {
