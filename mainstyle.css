@@ -13,6 +13,9 @@
 	src : url("Fonts/RobGraves.ttf");		
 }
 
+div{
+	margin: 6.5% 10% 2% 10%
+}	
 
 body {
 	display: grid;
