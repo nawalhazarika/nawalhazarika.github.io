@@ -20,14 +20,14 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 110px;
+    width: 70px;
     height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(17px);
-    --webkit-backdrop-filter: blur(17px);
+    backdrop-filter: blur(7px);
+    --webkit-backdrop-filter: blur(4px);
     border-right: 1px solid rgba(255, 255, 255, 0.7);
     transition: width 0.3s ease;
 }
