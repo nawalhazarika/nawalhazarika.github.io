@@ -22,11 +22,7 @@ body {
 	width: 100%;
 }
 
-header {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-    	margin: 10% 10% 2% 10%;
-}
+
 
 #topnav {
 	grid-column: 1/2;
