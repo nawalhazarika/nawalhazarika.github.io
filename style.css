@@ -29,11 +29,11 @@ body {
     backdrop-filter: blur(7px);
     --webkit-backdrop-filter: blur(4px);
     border-right: 1px solid rgba(255, 255, 255, 0.7);
-    transition: width 0.3s ease;
+    transition: width 0.2s ease;
 }
 
 .sidebar:hover {
-    width: 10px;
+    width: 200px;
 }
 
 .sidebar .logo {
