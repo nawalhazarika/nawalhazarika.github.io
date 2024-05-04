@@ -1,0 +1,16 @@
+
+#image > img {
+	height: 25rem;
+	width: auto;
+}
+
+#content > table {
+	box-shadow: 10px 10px 5px grey;
+}
+
+#content >table, th, td {
+	border-collapse: collapse;
+	border: 2px solid black;
+	font-size: 1rem;
+    
+}
