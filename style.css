@@ -26,14 +26,14 @@ body {
     align-items: center;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(7px);
-    --webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
     border-right: 1px solid rgba(255, 255, 255, 0.7);
     transition: width 0.2s ease;
 }
 
 .sidebar:hover {
-    width: 200px;
+    width: 260px;
 }
 
 .sidebar .logo {
