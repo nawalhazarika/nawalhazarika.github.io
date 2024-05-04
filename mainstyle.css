@@ -1,5 +1,5 @@
 /* Font Declarations */
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 @font-face {
 	font-family: 'Drawing Guides';
 	src: url("Fonts/Drawing Guides.ttf");
@@ -56,7 +56,7 @@ header {
 	text-decoration-style: dashed;
 }
 header > span {
-	font-family: century gothic;
+	font-family: Roboto Slab;
 	color: #01578a;
 	font-size: 2.6rem;
 }
