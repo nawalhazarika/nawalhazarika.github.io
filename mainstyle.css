@@ -131,9 +131,12 @@ nav > ul li{
 @media screen and (max-width: 1000px) {
 	body{
 		height: 100vh;
-		background-image: url("Photos/bg portait.jpg");
+		width: 100%;
+		background-image: url("Photos/bg.jpg");
 		background-position: center;
-   		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	    	background-size: cover;
 	}
 	header {
 		margin: 6% 10% 2% 10%;
