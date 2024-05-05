@@ -122,7 +122,6 @@ nav > ul li{
 	header {
 		grid-column: 1;
 		grid-row: 1;
-		padding-left: 12%;
 		color: #f1f1f1;
 		font-size: 1.5rem;
 	}
