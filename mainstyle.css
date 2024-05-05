@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    	margin: 10% 10% 2% 10%;
+    	margin: 12% 10% 2% 10%;
 	background: rgb(24,24,24,.7);
     	padding: 10px;
 }
@@ -139,7 +139,7 @@ nav > ul li{
 	    	background-size: cover;
 	}
 	header {
-		margin: 6% 10% 2% 10%;
+		margin: 10% 10% 2% 10%;
 		background: rgba(24,24,24,.7);
     		padding: 10px;
 		grid-column: 1;
