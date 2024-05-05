@@ -150,7 +150,6 @@ nav > ul li{
 	header {
 		grid-column: 1;
 		grid-row: 1;
-		text-align: center;
 		padding-left: 12%;
 	}
 		
@@ -165,7 +164,7 @@ nav > ul li{
 		padding-top: 0%;
 	}
 	.link {
-		color: #f0e922;
+		color: #22dff0;
 	}
 	#board-wrapper {
 		grid-column: 1;
