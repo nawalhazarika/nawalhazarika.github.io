@@ -144,7 +144,7 @@ nav > ul li{
 	body {
 		display: grid;
 		grid-template-columns: 100%;
-        	grid-gap: 5px;	
+        	/* grid-gap: 5px; */	
 		grid-template-rows: auto;
 	}
 	header {
