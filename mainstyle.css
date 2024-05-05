@@ -47,7 +47,7 @@ header {
 #image {
 	grid-column: 1;
 	grid-row: 2 / 3;
-	text-align: center;
+	text-align: top-right;
 }
 
 .link {
