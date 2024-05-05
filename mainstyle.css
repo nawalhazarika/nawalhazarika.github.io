@@ -128,19 +128,13 @@ nav > ul li{
 }
 	
 /*For mobiles*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 450px) {
 	body{
-		height: 100vh;
-		width: 100%;
-		background-image: url("Photos/bg.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-	    	background-size: cover;
+		background: red;
 	}
 	header {
 		margin: 6% 10% 2% 10%;
-		background: rgb(24,24,24,.7);
+		background: rgba(24,24,24,.7);
     		padding: 10px;
 		grid-column: 1;
 		grid-row: 1;
