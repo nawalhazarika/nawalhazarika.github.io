@@ -119,6 +119,9 @@ nav > ul li{
 	
 /*For mobiles*/
 @media screen and (max-width: 400px) {
+	body{
+		background-image: url("Photos/bg portrait.jpg");
+	}
 	header {
 		grid-column: 1;
 		grid-row: 1;
