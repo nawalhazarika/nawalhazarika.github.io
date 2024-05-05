@@ -45,8 +45,8 @@ header {
 }
 
 #image{
+	padding: 8px 8px 8px 2px;
 	text-align: right;
-	position: right;
 }
 
 .link {
