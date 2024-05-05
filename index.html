@@ -12,44 +12,30 @@
 	<link rel="stylesheet" type="text/css" href="home.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 	<link rel="stylesheet" href="style.css">
-	<style>
-	        .top-right {
-	            position: fixed;
-	            top: 10px;
-	            right: 10px;
-		    width: 10%;
-	        }
-    	</style>
+	<link rel="stylesheet" href="sidenav.css">
 </head>
 <body>
-	<aside class="sidebar">
-	      <div class="logo">
-	        <img src="Photos/logo.png" alt="logo">
-	        <h2>NKH</h2>
-	      </div>
-	      <ul class="links">
-	        <li>
-	          <span class="material-symbols-outlined">menu_book</span>
-	          <a href="education.html">Education</a>
-	        </li>
-	        <li>
-	          <span class="material-symbols-outlined">calculate</span>
-	          <a href="#">Research</a>
-	        </li>
-	        <li>
-	          <span class="material-symbols-outlined">edit_note</span>
-	          <a href="#">Notes</a>
-	        </li>
-	        <li>
-	          <span class="material-symbols-outlined">shuffle</span>
-	          <a href="#">Miscellenous</a>
-	        </li>
-		 <li>
-	          <span class="material-symbols-outlined">mail</span>
-	          <a href="contact.html">Contact</a>
-	        </li>
-	      </ul>
-	</aside>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	</div>
+	
+	<h2>Animated Sidenav Example</h2>
+	<p>Click on the element below to open the side navigation menu.</p>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+	
+	<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+	
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
 	<header>
 		<span>Nawal Kishor Hazarika</span>
 		<hr>
