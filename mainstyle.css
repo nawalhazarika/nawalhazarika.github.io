@@ -132,6 +132,9 @@ nav > ul li{
 /*For mobiles*/
 @media screen and (max-width: 450px) {
 	body{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
 		background-image: url("Photos/bg.jpg");
 		background-position: center;
 		background-repeat: no-repeat;
