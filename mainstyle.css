@@ -151,6 +151,7 @@ nav > ul li{
 		grid-column: 1;
 		grid-row: 1;
 		padding-left: 12%;
+		color: #f1f1f1;
 	}
 		
 	#topnav {
@@ -164,7 +165,7 @@ nav > ul li{
 		padding-top: 0%;
 	}
 	.link {
-		color: #22dff0;
+		color: #12ebff;
 	}
 	#board-wrapper {
 		grid-column: 1;
