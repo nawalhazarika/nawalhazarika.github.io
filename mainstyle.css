@@ -14,8 +14,11 @@
 }
 
 body {
+	height: 100vh;
 	width: 100%;
 	background-image: url("Photos/bg.jpg");
+	background-position: center;
+    	background-size: cover;
 	font-size: 1.5rem;
 	color: white;
 	text-align: justify;
@@ -125,7 +128,10 @@ nav > ul li{
 /*For mobiles*/
 @media screen and (max-width: 1000px) {
 	body{
+		height: 100vh;
 		background-image: url("Photos/bg portait.jpg");
+		background-position: center;
+   		background-size: cover;
 	}
 	header {
 		margin: 6% 10% 2% 10%;
