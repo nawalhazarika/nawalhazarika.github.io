@@ -15,7 +15,7 @@
 
 body {
 	width: 100%;
-	background: rgb(24,24,24);
+	background-image: url("Photos/background.jpg");
 	font-size: 1.5rem;
 	color: white;
 	text-align: justify;
@@ -23,7 +23,8 @@ body {
 
 header {
     	margin: 6% 10% 2% 10%;
-	padding: 20px;
+	background: rgb(24,24,24,.7);
+    	padding: 10px;
 }
 
 #topnav {
