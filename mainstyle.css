@@ -18,6 +18,8 @@ body {
 	width: 100%;
 	background-image: url("Photos/bg.jpg");
 	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
     	background-size: cover;
 	font-size: 1.5rem;
 	color: white;
