@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    	margin: 6% 10% 2% 10%;
+    	margin: 6% 15% 2% 10%;
 	background: rgb(24,24,24,.7);
     	padding: 10px;
 }
@@ -105,8 +105,8 @@ nav > ul li{
 
 #image > img {
 	position: absolute;
-	top: 10px;
-    	right: 10px;
+	top: 20px;
+    	right: 20px;
 	height: auto;
     	width: 10%;
 	z-index:-1;
