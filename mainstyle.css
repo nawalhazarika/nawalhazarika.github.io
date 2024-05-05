@@ -18,12 +18,12 @@ body {
 	background: rgb(24,24,24);
 	font-size: 1.5rem;
 	color: white;
+	text-align: justify;
 }
 
 header {
     	margin: 6% 10% 2% 10%;
 	padding: 20px;
-	text-align: justify;
 }
 
 #topnav {
