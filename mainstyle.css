@@ -141,17 +141,12 @@ nav > ul li{
 }
 /*For mobiles*/
 @media screen and (max-width: 650px) {
-	body {
-		/*display: grid;
-		grid-template-columns: 100%;
-        	/* grid-gap: 5px; 
-		/*grid-template-rows: auto;*/
-	}
 	header {
 		grid-column: 1;
 		grid-row: 1;
 		padding-left: 12%;
 		color: #f1f1f1;
+		font-size: 1.5rem;
 	}
 		
 	#topnav {
