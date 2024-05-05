@@ -23,6 +23,7 @@ body {
 header {
     	margin: 6% 10% 2% 10%;
 	padding: 20px;
+	text-align: justify;
 }
 
 #topnav {
