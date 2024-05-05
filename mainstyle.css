@@ -186,7 +186,9 @@ nav > ul li{
 	
 	#image > img {
 		height: 7rem;
-		width: auto;		
+		width: auto;
+		position: center;
+		
 	}
 	
 	#bottomnav {
