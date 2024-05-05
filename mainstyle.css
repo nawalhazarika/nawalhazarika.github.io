@@ -22,7 +22,7 @@ body {
 
 header {
     	margin: 6% 10% 2% 10%;
-	background:rgb(24,24,24);
+	background-image: url("Photos/bg.jpg");
 	padding: 20px;
 }
 
