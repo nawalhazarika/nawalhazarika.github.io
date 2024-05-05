@@ -177,6 +177,7 @@ nav > ul li{
 		grid-row: 3;
 		text-align: center;
 		padding: 0;
+		align-items: center;
 	}
 	
 	#image > img {
