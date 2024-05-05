@@ -16,10 +16,14 @@
 body {
 	margin: 6.5% 10% 2% 10%
 	width: 100%;
+	background: rgb(24,24,24);
+	font-size: 1.5rem;
+	color: white;
 }
 
 header {
-    	margin: 10% 10% 2% 10%;
+    	margin: 6% 10% 2% 10%;
+	ackground-image: url("Photos/background.jpg");
 }
 
 #topnav {
@@ -31,7 +35,7 @@ header {
 #board-wrapper {
 	grid-column: 1 / 2;
 	grid-row: 1 / 3;
-	background-image: url("Photos/background.jpg");
+	/*background-image: url("Photos/background.jpg");*/
 	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: -1;
