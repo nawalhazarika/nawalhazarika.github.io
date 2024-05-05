@@ -26,14 +26,17 @@ body {
   font-size: 20px;
   color: #f1f1f1;
   display: block;
-  transition: 0.3s;
+  transition: 0.7s;
 }
 
 .sidenav img {
+position:absolute;
     display: block;
-    width:40%;
-    margin: 0px 30% 10% 30%;
+    width:40px;
+    top: 20px;
+   	left: 20px;;
 }
+
 
 .sidenav li {
 	margin: 10px 8% 10px 8%;
@@ -74,7 +77,7 @@ body {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 20px;
   font-size: 36px;
   margin-left: 50px;
 }
