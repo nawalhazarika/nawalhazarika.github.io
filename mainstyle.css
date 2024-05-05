@@ -187,7 +187,8 @@ nav > ul li{
 	#image > img {
 		height: 7rem;
 		width: auto;
-		position: center;
+		margin-left: auto;
+                margin-right: auto;
 		
 	}
 	
