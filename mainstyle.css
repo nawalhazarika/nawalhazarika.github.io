@@ -44,9 +44,7 @@ header {
 	overflow: auto;
 }
 
-#image {
-	grid-column: 1;
-	grid-row: 2 / 3;
+#image{
 	text-align: right;
 	position: right;
 }
