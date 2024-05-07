@@ -41,8 +41,9 @@ position:absolute;
 
 .sidenav li {
 	margin: 10px 8% 10px 8%;
-    display: flex;
-    align-items: right;
+	display: flex;
+	align-items: right;
+	background: grey;
 }
 
 .sidenav li span {
