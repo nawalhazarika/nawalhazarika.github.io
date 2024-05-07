@@ -45,6 +45,7 @@ position:absolute;
 	align-items: right;
 	background: green;
 	border-radius: 10px;
+	border-top: 1px solid grey;
 }
 
 .sidenav li span {
