@@ -67,11 +67,7 @@ position:absolute;
     border-radius: 10px;
     background: rgba(24,24,24, .7);
     transition: .5s;
-    color: red;
-}
-> a{
-  color: #029cf7;
-  transition: .5s;
+    color: #029cf7;
 }
 
 
