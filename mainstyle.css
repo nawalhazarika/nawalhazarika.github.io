@@ -7,8 +7,8 @@ body {
 
 body {
 	height: 100vh;
-  margin-left: 3%;
-  margin-right: 21%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top:10px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -19,37 +19,40 @@ body {
 	text-align: justify;
 }
 
-.light_theme_sw{
+.light_sw{
   position: absolute;
-  top: 20px;
-  right: 0px;
-  font-size: 36px;
-  margin-right: 5%;
-  cursor:pointer;
-  display: none;
-}
-
-.dark_theme_sw{
-  position: absolute;
-  top: 20px;
+  top: 15px;
   right: 0px;
   font-size: 36px;
   margin-right: 5%;
   cursor:pointer;
 }
 
+.dark_sw{
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  font-size: 36px;
+  margin-right: 5%;
+  cursor:pointer;
+}
 
-.portrait{
+.txt_img{
+  margin-right: 20%;
+}
+
+.portrait img{
 	display:block;
-  position: absolute;
-  margin-left: 76.5%;
-  width:15%;
+  float: right;
+  width: 15%;
+  background:#047ab1;
+  padding: 3px;
 }
 
-.center{
+.assamese_name span{
   position: absolute;
   margin-bottom:10px;
-  margin-left: 5%;
+  margin-left: 50px;
   margin-right: 15%;
 }
 .tcenter {
@@ -61,7 +64,7 @@ body {
   color: rgb(255, 0, 0);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
 
   body {
     position: relative;
@@ -77,13 +80,21 @@ body {
     color: rgb(22, 22, 22);
     text-align: justify;
   }
-  .portrait{
-    margin-bottom:10px;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 7rem;
+
+  .txt_img{
+    margin-top:50%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
+
+  
+  .portrait img{
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+  }
+
+  
 }
 
