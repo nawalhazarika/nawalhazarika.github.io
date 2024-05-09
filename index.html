@@ -48,18 +48,20 @@
 
             function darkm() {
             document.getElementById("bdy").className = "black";
-            document.getElementById("drksw").style = "visibility:hidden";
-            document.getElementById("ltsw").style = "position: absolute;top: 20px;right: 0px; font-size: 36px; margin-right: 5%; cursor:pointer;visibility:visible;color:white;display:block"
+            document.getElementById("ltsw").style = "display: inline;margin-left: 2%;color:white;";
+            document.getElementById("drksw").style = "display: none;";/*
+            document.getElementById("ltsw").style = "position: absolute;top: 16px;right: 0px; font-size: 30px; margin-right: 5%; cursor:pointer;visibility:visible;color:white;display:block"*/
             document.getElementById("bio").style = "font-size:20px;color:white;padding:20px";
             document.getElementById("head").style= "color:white";
             }
 
             function lightm() {
+            document.getElementById("bdy").className = "bg";
             document.getElementById("ltsw").style = "visibility:hidden";
-            document.getElementById("drksw").style = "position: absolute;top: 20px;right: 0px; font-size: 36px; margin-right: 5%; cursor:pointer;visibility:visible"
+            document.getElementById("drksw").style = "display: inline;color:black;";/*
+            document.getElementById("drksw").style = "position: absolute;top: 16px;right: 0px; font-size: 30px; margin-right: 5%; cursor:pointer;visibility:visible;"*/
             document.getElementById("bio").style="font-size:20px;color:white;padding:20px;background:rgba(33, 32, 32, 0.49)";
             document.getElementById("head").style= "background:rgba(33, 32, 32, 0.30);color:white";
-            document.getElementById("bdy").className = "bg";
             }
     </script>
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -67,15 +69,13 @@
 
 
 <body id="bdy" class="bg">
-    <div id="ltsw" class="light_theme_sw">
-        <span  href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined"> light_mode</span>
-    </div>
-    <div id="drksw" class="dark_theme_sw">
-        <span  href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined">dark_mode</span>
-    </div>
 
-    <div class="center">
-        <span style="color:rgb(255, 255, 255);font-size:37px">নৱল কিশোৰ হাজৰিকা</span>
+
+    <div>
+        <span style="font-size:35px;cursor:pointer;color:#f6f6f6" onclick="openNav()">&#9776;</span>
+        <span class="assamese_name"  style="color:rgb(255, 255, 255);font-size:37px;margin-left: 2%;"> নৱল কিশোৰ হাজৰিকা</span>
+        <a id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined ltsw" style="margin-left: 2%;color:white;display: none;" > light_mode</a>
+        <a id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined drksw" style="margin-left: 2%;color:black;">dark_mode</a>
     </div>
 
 
@@ -106,26 +106,30 @@
         </li>
 	</div>
 
-    <span style="font-size:35px;cursor:pointer;color:#f6f6f6" onclick="openNav()">&#9776;</span>
+
+    
      
 
+
     <div id=main style="margin-top: 60px;">        
-        <div>
-            <img class="portrait" style="background:#047ab1;padding:4px;" src="moi.jpg" />
+        <div class="portrait" >
+            <img src="moi.jpg" />
         </div>
-        </header>
-        <header id="head" style="background:rgba(33, 32, 32, 0.30);color:white">
-            <div class="tcenter" >
-                <span style="font-size:60px;text-align: center">Nawal Kishor Hazarika</span>
-            </div>
-        </header>
-            
-        <hr style="border: 2px solid #098650">
-        <hr style="border: 2px solid #047ab1">
-            
-        <p id="bio" style="font-size:20px;color:white;padding:20px;background:rgba(33, 32, 32, 0.49)">
-            Hi! I am Nawal. I have completed Integrated M.Sc. in Mathematics from <a href ="http://www.tezu.ernet.in/" class="link"> Tezpur University</a>. Currently I am studying Commutative Algebra and basic Algebraic Geometry. I will be joining <a href ="https://cas.okstate.edu/department_of_mathematics/" class="link"> Oklahoma State University, Stillwater</a> on Fall 2024.
+    
+        <div class="txt_img">
+            <header id="head" style="background:rgba(33, 32, 32, 0.30);color:white">
+                <div class="tcenter" >
+                    <span style="font-size:60px;text-align: center">Nawal Kishor Hazarika</span>
+                </div>
+            </header>
+                
+            <hr style="border: 2px solid #098650">
+            <hr style="border: 2px solid #047ab1">
+                
+            <p id="bio" style="font-size:20px;color:white;padding:20px;background:rgba(33, 32, 32, 0.49)">
+                Hi! I am Nawal. I have completed Integrated M.Sc. in Mathematics from <a href ="http://www.tezu.ernet.in/" class="link"> Tezpur University</a>. Currently I am studying Commutative Algebra and basic Algebraic Geometry. I will be joining <a href ="https://cas.okstate.edu/department_of_mathematics/" class="link"> Oklahoma State University, Stillwater</a> on Fall 2024.
             </p>
+        </div>
 </div> 
 
 <!-- <footer style="text-align: center;font-size: 10px;  margin-left: 40%;margin-right:40%" >  
