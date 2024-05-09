@@ -87,7 +87,9 @@ body {
     margin-left: 5%;
   }
 
-  
+  .assamese_name span{
+	  font-size: 35px;
+  }
   .portrait img{
     align-items: center;
     margin-left: 30%;
