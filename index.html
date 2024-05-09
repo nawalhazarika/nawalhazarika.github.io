@@ -57,8 +57,8 @@
 
             function lightm() {
             document.getElementById("bdy").className = "bg";
-            document.getElementById("ltsw").style = "visibility:hidden";
-            document.getElementById("drksw").style = "display: inline;color:black;";/*
+            document.getElementById("ltsw").style = "display: none;";
+            document.getElementById("drksw").style = "display: inline;margin-left: 2%;color:black;";/*
             document.getElementById("drksw").style = "position: absolute;top: 16px;right: 0px; font-size: 30px; margin-right: 5%; cursor:pointer;visibility:visible;"*/
             document.getElementById("bio").style="font-size:20px;color:white;padding:20px;background:rgba(33, 32, 32, 0.49)";
             document.getElementById("head").style= "background:rgba(33, 32, 32, 0.30);color:white";
@@ -74,8 +74,8 @@
     <div>
         <span style="font-size:35px;cursor:pointer;color:#f6f6f6" onclick="openNav()">&#9776;</span>
         <span class="assamese_name"  style="color:rgb(255, 255, 255);font-size:37px;margin-left: 2%;"> নৱল কিশোৰ হাজৰিকা</span>
-        <a id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined ltsw" style="margin-left: 2%;color:white;display: none;" > light_mode</a>
-        <a id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined drksw" style="margin-left: 2%;color:black;">dark_mode</a>
+        <a id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined ltsw" style="display: none;margin-left: 2%;color:white" > light_mode</a>
+        <a id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined drksw" style="display: inline;margin-left: 2%;color:black;">dark_mode</a>
     </div>
 
 
@@ -100,14 +100,10 @@
             <span class="material-symbols-outlined">shuffle</span>
 	        <a href="#">Miscellenous</a></li>
         </li>
-	<li>
+	    <li>
             <span class="material-symbols-outlined">mail</span>
             <a href="contact.html">Contact</a> 
         </li>
-	<li>
-            <span class="material-symbols-outlined">person</span>
-            <a href="cv.pdf">Contact</a> 
-	</li>
 	</div>
 
 
