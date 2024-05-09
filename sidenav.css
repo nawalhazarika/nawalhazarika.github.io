@@ -44,15 +44,13 @@ position:absolute;
 	margin: 10px 8% 10px 8%;
 	display: flex;
 	align-items: right;
-	background: green;
 	border-radius: 10px;
-	border-top: 1px solid grey;
 }
 
 .sidenav li span {
 	font-size: 30px;
     padding: 10px 5px 10px 10%;
-    color: #111:
+    color: #f1f1f1;
 }
 
 .sidenav li a {
@@ -75,6 +73,14 @@ position:absolute;
 
 
 .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .darkMode {
   position: absolute;
   top: 0;
   right: 20px;
