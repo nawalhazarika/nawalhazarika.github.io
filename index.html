@@ -1,71 +1,136 @@
 <!DOCTYPE html>
+
 <html lang = "en">
+
+<style>
+    #main{
+        transition: margin-left .5s;
+        padding: 16px;
+        }
+    #moi{
+        transition: margin-left 1.5s;
+        padding: 16px;
+        }
+    .bg{
+        transition:  .5s;
+        background-image: url("bg.jpg");
+    }
+    .black{
+        transition:  .5s;
+        background: black;
+    }
+    #ltsw{
+        transition: .01s;
+    }
+    #drksw{
+        transition: .01s;
+    }
+    #bdy
+        {
+        transition:  .5s;    
+        }
+</style>
+
 <head>
-	<!-- Icons courtesy of Iconic: https://useiconic.com/open/ -->
-	<meta charset = "utf-8">
-	<meta name = "description" content = "Homepage of Nawal Kishor Hazarika">
-	<meta name = "author" content = "Nawal Kishor Hazarika">
-	<meta name = "viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Nawal Kishor Hazarika's Homepage</title>
-	<link rel="stylesheet" type="text/css" href="mainstyle.css">
-	<!-- <link rel="stylesheet" type="text/css" href="home.css">
-	<link rel="stylesheet" href="style.css">  -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-	<link rel="stylesheet" href="sidenav.css">
+    <title>Nawal Kishor Hazarika's Homepage</title>
+    <link rel="stylesheet" href="sidenav.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+
+            function darkm() {
+            document.getElementById("bdy").className = "black";
+            document.getElementById("drksw").style = "visibility:hidden";
+            document.getElementById("ltsw").style = "position: absolute;top: 20px;right: 0px; font-size: 36px; margin-right: 5%; cursor:pointer;visibility:visible;color:white;display:block"
+            document.getElementById("bio").style = "font-size:20px;color:white;padding:20px";
+            document.getElementById("head").style= "color:white";
+            }
+
+            function lightm() {
+            document.getElementById("ltsw").style = "visibility:hidden";
+            document.getElementById("drksw").style = "position: absolute;top: 20px;right: 0px; font-size: 36px; margin-right: 5%; cursor:pointer;visibility:visible"
+            document.getElementById("bio").style="font-size:20px;color:white;padding:20px;background:rgba(33, 32, 32, 0.49)";
+            document.getElementById("head").style= "background:rgba(33, 32, 32, 0.30);color:white";
+            document.getElementById("bdy").className = "bg";
+            }
+    </script>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>	
+
+
+<body id="bdy" class="bg">
+    <div id="ltsw" class="light_theme_sw">
+        <span  href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined"> light_mode</span>
+    </div>
+    <div id="drksw" class="dark_theme_sw">
+        <span  href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined">dark_mode</span>
+    </div>
+
+    <div class="center">
+        <span style="color:rgb(255, 255, 255);font-size:37px">নৱল কিশোৰ হাজৰিকা</span>
+    </div>
+
+
 	<div id="mySidenav" class="sidenav">
-		
-     	<img src="Photos/logo.png" alt="NKH">
-		
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<li>
-		<span class="material-symbols-outlined">menu_book</span>
-		 <a href="education.html">Education</a>
-	</li>
-	 <li>
-		 <span class="material-symbols-outlined">calculate</span>
-		  <a href="#">Research</a> 
-	 </li>
-	<li>
-		<span class="material-symbols-outlined">history_edu</span>
-		 <a href="#">Notes</a>
-	 </li>
-	  <li>
-		  <span class="material-symbols-outlined">view_comfy_alt</span>
-		 <a href="#">Miscellenous</a>
-	 </li>
-	  <li>
-		<span class="material-symbols-outlined">call</span>
-		<a href="contact.html">Contact</a> 
-	 </li>
-	  <li>
-		<span class="material-symbols-outlined">person</span>
-		<a href="CV.pdf">CV</a> 
-	 </li>
+        
+	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <img src="nkh_logo.png" alt="NKH">
+        <li>
+            <span class="material-symbols-outlined">book</span>
+            <a href="education.html">Education</a>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">calculate</span>
+        	<a href="#">Research</a>
+        </li>
+	    <li>
+            <span class="material-symbols-outlined">book</span>
+        	<a href="#">Notes</a>
+        </li>
+	    <li>
+            <span class="material-symbols-outlined">shuffle</span>
+	        <a href="#">Miscellenous</a></li>
+        </li>
+	    <li>
+            <span class="material-symbols-outlined">mail</span>
+            <a href="contact.html">Contact</a> 
+        </li>
 	</div>
-	<span style="font-size:35px;cursor:pointer;color:white;padding:10px" onclick="openNav()">&#9776;</span>
-	<div id="image">
-	    <img src="Photos/moi.jpg" class="ribbon" width="300" />
-	</div>
-	<script>
-	function openNav() {
-	  document.getElementById("mySidenav").style.width = "250px";
-	}
-	
-	function closeNav() {
-	  document.getElementById("mySidenav").style.width = "0";
-	}
-	</script>
-	<header>
-		<span>Nawal Kishor Hazarika</span>
-		<hr style="border: 1px solid #f1f1f1">
-	   	<hr style="border: 1px solid #01578a">
-		<p>
-		<p>
-	             Hi! I am Nawal. I have completed Integrated M.Sc. in Mathematics from <a href ="http://www.tezu.ernet.in/" class="link"> Tezpur University</a>. Currently I am studying Commutative Algebra and basic Algebraic Geometry. I will be joining <a href ="https://go.okstate.edu/" class="link"> Oklahoma State University, Stillwater</a> on Fall 2024.
-		</p>
-	</header>
+
+    <span style="font-size:35px;cursor:pointer;color:#f6f6f6" onclick="openNav()">&#9776;</span>
+     
+
+    <div id=main style="margin-top: 60px;">        
+        <div>
+            <img class="portrait" style="background:#047ab1;padding:4px;" src="moi.jpg" />
+        </div>
+        </header>
+        <header id="head" style="background:rgba(33, 32, 32, 0.30);color:white">
+            <div class="tcenter" >
+                <span style="font-size:60px;text-align: center">Nawal Kishor Hazarika</span>
+            </div>
+        </header>
+            
+        <hr style="border: 2px solid #098650">
+        <hr style="border: 2px solid #047ab1">
+            
+        <p id="bio" style="font-size:20px;color:white;padding:20px;background:rgba(33, 32, 32, 0.49)">
+            Hi! I am Nawal. I have completed Integrated M.Sc. in Mathematics from <a href ="http://www.tezu.ernet.in/" class="link"> Tezpur University</a>. Currently I am studying Commutative Algebra and basic Algebraic Geometry. I will be joining <a href ="https://cas.okstate.edu/department_of_mathematics/" class="link"> Oklahoma State University, Stillwater</a> on Fall 2024.
+            </p>
+</div> 
+
+<!-- <footer style="text-align: center;font-size: 10px;  margin-left: 40%;margin-right:40%" >  
+    <p id="drksw" href="javascript:void(0)" class="darkMode" onclick="darkm()" style="color:red;cursor:pointer;background:black;padding: 5px;;border-radius: 20px;">Change background</p>
+    <p id="ltsw" href="javascript:void(0)" class="darkMode" onclick="lightm()"  style="visibilty:hidden">Return to previous background</p>
+</footer> -->
 </body>
 </html>
