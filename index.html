@@ -49,12 +49,14 @@
             document.getElementById("main").style.marginLeft = "250px";
             document.getElementById("main").style.marginRight = "-250px";
             document.getElementById("top").style.marginLeft = "260px";
+            document.getElementById("top").style.marginRight = "-260px";
             document.getElementById("moi_image").style="width:0";
             }
 
             function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("top").style.marginLeft = "10px";
+            document.getElementById("top").style.marginRight = "0px";
             document.getElementById("main").style.marginLeft= "5%";
             document.getElementById("main").style.marginRight = "5%";
             document.getElementById("moi_image").style= "display:block";
@@ -121,13 +123,14 @@
 
 
     
-    <div id="top" style="margin-left: 10px;display: inline;">
-
+    <div id="top" style="margin-left: 10px;display:block;">
         <span class="nav_button" onclick="openNav()">&#9776;</span>
         <span class="assamese_name" > নৱল কিশোৰ হাজৰিকা</span>
 
-        <a id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined ltsw" style="display: none;margin-left: 2%;color:white;text-decoration: none;" > light_mode</a>
-        <a id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined drksw" style="display: inline;margin-left: 2%;color:rgb(255, 255, 255);text-decoration: none;">dark_mode</a>
+        <div class="switch" >
+            <a id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined " style="display: none;margin-left: 2%;color:white;text-decoration: none;" > light_mode</a>
+            <a id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined " style="display: inline;margin-left: 2%;color:rgb(255, 255, 255);text-decoration: none;">dark_mode</a>
+        </div>
     </div>
 
 
