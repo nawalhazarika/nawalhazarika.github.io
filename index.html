@@ -5,12 +5,18 @@
 <style>
     #main{
         transition: margin-left .5s;
+        transition: margin-right .5s;
         padding: 16px;
         }
-    #moi{
-        transition: margin-left 1.5s;
-        padding: 16px;
+    #moi_image{
+        transition: visibility .5s;
         }
+    #mySidenav{
+        transition:  .5s;
+    }
+    #top{
+        transition:  .5s;
+    }
     .bg{
         transition:  .5s;
         background-image: url("bg.jpg");
@@ -40,12 +46,18 @@
     <script>
             function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
-            /*document.getElementById("main").style.marginLeft = "250px";*/
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("top").style.marginLeft = "260px";
+            document.getElementById("main").style.marginRight = "-250px";
+            document.getElementById("moi_image").style= "display:none";
             }
 
             function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
+            document.getElementById("top").style.marginLeft = "10px";
+            document.getElementById("main").style.marginLeft= "5%";
+            document.getElementById("main").style.marginRight = "5%";
+            document.getElementById("moi_image").style= "display:block";
             }
 
             function darkm() {
@@ -73,12 +85,6 @@
 <body id="bdy" class="bg">
 
 
-    <div>
-        <span style="font-size:35px;cursor:pointer;color:#f6f6f6" onclick="openNav()">&#9776;</span>
-        <span class="assamese_name"  style="color:rgb(255, 255, 255);margin-left: 2%;"> নৱল কিশোৰ হাজৰিকা</span>
-        <a id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined ltsw" style="display: none;margin-left: 2%;color:white;text-decoration: none;" > light_mode</a>
-        <a id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined drksw" style="display: inline;margin-left: 2%;color:black;text-decoration: none;">dark_mode</a>
-    </div>
 
 
 	<div id="mySidenav" class="sidenav">
@@ -86,6 +92,7 @@
 	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
         <img src="nkh_logo.png" alt="NKH">
+
         <li>
             <span class="material-symbols-outlined">book</span>
             <a href="education.html">Education</a>
@@ -114,25 +121,32 @@
 
 
     
-     
+    <div id="top" style="margin-left: 10px;">
+        <span style="font-size:35px;cursor:pointer;color:#f6f6f6;padding-left: 5px;" onclick="openNav()">&#9776;</span>
+        <span class="assamese_name"  style="color:rgb(255, 255, 255);"> নৱল কিশোৰ হাজৰিকা</span>
+        <a id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined ltsw" style="display: none;margin-left: 2%;color:white;text-decoration: none;" > light_mode</a>
+        <a id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined drksw" style="display: inline;margin-left: 2%;color:rgb(255, 255, 255);text-decoration: none;">dark_mode</a>
+    </div>
 
 
-    <div id=main style="margin-top: 60px;">        
-        <div class="portrait" >
-            <img src="moi.jpg" />
+    <div id=main style="margin-top: 60px;margin-left: 5%; margin-right: 5%;">        
+        
+        <div  class="portrait" >
+            <img id="moi_image" src="moi.jpg" />
         </div>
     
         <div class="txt_img">
             <header id="head" style="background:rgba(33, 32, 32, 0.30);color:white">
-                <div class="tcenter" >
-                    <span style="font-size:60px;text-align: center">Nawal Kishor Hazarika</span>
-                </div>
+
+            <div class="tcenter" >
+                    <span >Nawal Kishor Hazarika</span>
+            </div>
             </header>
                 
             <hr style="border: 2px solid #098650">
             <hr style="border: 2px solid #047ab1">
                 
-            <p id="bio" style="font-size:20px;color:white;padding:20px;background:rgba(33, 32, 32, 0.49)">
+            <p id="bio" class="para">
                 Hi! I am Nawal. I have completed Integrated M.Sc. in Mathematics from <a href ="http://www.tezu.ernet.in/" class="link"> Tezpur University</a>. Currently I am studying Commutative Algebra and basic Algebraic Geometry. I will be joining <a href ="https://cas.okstate.edu/department_of_mathematics/" class="link"> Oklahoma State University, Stillwater</a> on Fall 2024.
             </p>
         </div>
