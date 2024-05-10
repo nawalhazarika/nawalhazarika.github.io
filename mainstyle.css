@@ -80,8 +80,8 @@
   }
   .switch{
     position:relative;
-    margin-top:-35px;
-    margin-left: 95%;
+    margin-top: 15px;
+    float: right;
   }
 
   @media only screen and (max-width: 750px) {
