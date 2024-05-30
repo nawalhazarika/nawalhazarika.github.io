@@ -92,7 +92,7 @@ body {
 
 .edu{
     >img{
-        width: 30px;
+        width: 50px;
         padding:5px;
     }
 }
@@ -105,11 +105,8 @@ body {
     display: block;
     text-align: center;
     >img{
-        width: 30px;
+        width: 50px;
     }
-}
-.details>span{
-    font-size: 15px;
 }
 .edu:hover .details{
     text-align: left;
@@ -122,5 +119,6 @@ body {
 }
 .edu:hover .assamese_name{
     font-size: 20px;
+    padding-bottom: 10px;
 }
 }
