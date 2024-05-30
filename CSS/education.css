@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 body {
     font-family: "Roboto Slab", sans-serif;
-    
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     background: rgb(31, 31, 31);
@@ -90,35 +89,46 @@ body {
     margin:10px 5% 5% 5%;
 }
 
+.education{
+    margin: 0;
+}
 .edu{
     >img{
         width: 50px;
         padding:5px;
+        transition: .5s;
     }
 }
+
 .details>span{
     display: block;
     font-size: 20px;
-    transition: .3s;
+    transition: .5s;
 }
 .edu:hover{
     display: block;
     text-align: center;
+    transition: .5s;
     >img{
         width: 50px;
+        transition: .5s;
     }
 }
 .edu:hover .details{
+    transition: .5s;
     text-align: left;
 }
 .edu:hover .hidden{
+    transition: .5s;
     font-size: 15px;
 }
 .edu:hover .english_name{
     font-size: 15px;
+    transition: .5s;
 }
 .edu:hover .assamese_name{
     font-size: 20px;
     padding-bottom: 10px;
+    transition: .5s;
 }
 }
