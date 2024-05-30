@@ -4,11 +4,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 body {
     font-family: "Roboto Slab", sans-serif;
-    margin:2% 15% 20% 15%;
+    
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     background: rgb(31, 31, 31);
   }
+
+.education{
+    margin:2% 15% 20% 15%;;
+}
 
 .header{
     font-size: 50px;
@@ -118,49 +122,107 @@ body {
 
 }
 </style>
+<script>
+    function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("bdy").style.marginLeft = "300px";
+            document.getElementById("bdy").style.marginRight = "-250px";
+            /*document.getElementById("top").style.marginLeft = "260px";
+            document.getElementById("top").style.marginRight = "-260px";*/
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("bdy").style.marginLeft= "5%";
+            document.getElementById("bdy").style.marginRight = "5%";/*
+            document.getElementById("top").style.marginLeft = "10px";
+            document.getElementById("top").style.marginRight = "0px";*/
+            }
+</script>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name = "description" content = "My Education">
+    <link rel="stylesheet" href="sidenav.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 </head>
-<body>
-    <h1 class="header"> Education</h1>
-    <div class="edu">
-        <img src="Emblems/NIketan logo.png" alt=""> 
-        <div class="details">
-            <span class="english_name">Sankardev Sishu Vidya Niketan, Narayanpur</span>
-            <a class="assamese_name">শংকৰদেৱ শিশু বিদ্যা নিকেতন, নাৰায়ণপুৰ </a>
-            <a class="hidden">- Primary and Middle School</a>
-            <a class="hidden">- 2005-2012</a>
-            </span>
-        </div>
+<body style="margin-left: 5%; margin-right: 5%;">
+    
+    <div id="mySidenav" class="sidenav"> 
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+        <img src="nkh_logo.png" alt="NKH">
+        <li>
+            <span class="material-symbols-outlined">home</span>
+            <a href="web.html">Home</a>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">book</span>
+            <a href="education.html">Education</a>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">calculate</span>
+            <a href="#">Research</a>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">book</span>
+            <a href="#">Notes</a>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">shuffle</span>
+            <a href="#">Miscellenous</a></li>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">mail</span>
+            <a href="contact.html">Contact</a> 
+        </li>
+        <li>
+            <span class="material-symbols-outlined">person</span>
+            <a href="CV.pdf">CV</a> 
+        </li>
     </div>
-    <div class="edu">
-        <img src="Emblems/GJA logo.png" alt=""> 
-        <div class="details">
-            <span class="english_name"> Gyanjyoti Academy, Narayanpur </span>
-            <a class="assamese_name"> জ্ঞানজ্যোতি একাডেমী, নাৰায়ণপুৰ </a>
-            <a class="hidden">- High School Leaving Certificate </a>
-            <a class="hidden">- 2013-2016</a>
+
+    <div id="top" style="margin-left: 10px;display:block;">
+        <span class="nav_button" onclick="openNav()">&#9776;</span>
+    </div>
+    
+    <div class="education">
+        <h1 class="header"> Education</h1>
+        <div class="edu">
+            <img src="Education/Emblems/NIketan logo.png" alt=""> 
+            <div class="details">
+                <span class="english_name">Sankardev Sishu Vidya Niketan, Narayanpur</span>
+                <a class="assamese_name">শংকৰদেৱ শিশু বিদ্যা নিকেতন, নাৰায়ণপুৰ </a>
+                <a class="hidden">- Primary and Middle School</a>
+                <a class="hidden">- 2005-2012</a>
+                </span>
+            </div>
         </div>
-    </div>    
-    <div class="edu">
-        <img src="Emblems/Cotton_University_logo.png" alt=""> 
-        <div class="details">
-            <span class="english_name"> Cotton College (University), Guwahati </span>
-            <a class="assamese_name"> কটন কলেজ (বিশ্ববিদ্যালয়), গুৱাহাটী</a>
-            <a class="hidden">- Higher Secondary (10+2) </a>
-            <a class="hidden">- Science </a>
-            <a class="hidden">- 2016-2018</a>
-        </div>
-    </div>    
-    <div class="edu">
-        <img src="Emblems/Tezpur_University_logo.png" alt=""> 
-        <div class="details">
-            <span class="english_name"> Tezpur University, Napaam </span>
-            <a class="assamese_name"> তেজপুৰ বিশ্ববিদ্যালয়, নপাম </a>
-            <a class="hidden">- Integrated M.Sc. in Mathematics </a>
-            <a class="hidden">- 2018-2023</a>
+        <div class="edu">
+            <img src="Education/Emblems/GJA logo.png" alt=""> 
+            <div class="details">
+                <span class="english_name"> Gyanjyoti Academy, Narayanpur </span>
+                <a class="assamese_name"> জ্ঞানজ্যোতি একাডেমী, নাৰায়ণপুৰ </a>
+                <a class="hidden">- High School Leaving Certificate </a>
+                <a class="hidden">- 2013-2016</a>
+            </div>
+        </div>    
+        <div class="edu">
+            <img src="Education/Emblems/Cotton_University_logo.png" alt=""> 
+            <div class="details">
+                <span class="english_name"> Cotton College (University), Guwahati </span>
+                <a class="assamese_name"> কটন কলেজ (বিশ্ববিদ্যালয়), গুৱাহাটী</a>
+                <a class="hidden">- Higher Secondary (10+2) </a>
+                <a class="hidden">- Science </a>
+                <a class="hidden">- 2016-2018</a>
+            </div>
+        </div>    
+        <div class="edu">
+            <img src="Education/Emblems/Tezpur_University_logo.png" alt=""> 
+            <div class="details">
+                <span class="english_name"> Tezpur University, Napaam </span>
+                <a class="assamese_name"> তেজপুৰ বিশ্ববিদ্যালয়, নপাম </a>
+                <a class="hidden">- Integrated M.Sc. in Mathematics </a>
+                <a class="hidden">- 2018-2023</a>
+            </div>
         </div>
     </div>
 </body>
