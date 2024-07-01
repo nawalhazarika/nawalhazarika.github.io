@@ -17,12 +17,12 @@
   }
 
   .bg{
-      transition:  .5s;
+      transition:  .2s;
       background: rgb(147, 147, 147);
       color: rgb(35, 35, 35);
   }
   .black{
-      transition:  .5s;
+      transition:  .2s;
       background: rgb(31, 31, 31);
       color:white
   }
