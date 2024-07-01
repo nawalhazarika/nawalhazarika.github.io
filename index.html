@@ -17,14 +17,6 @@
     #top{
         transition:  .5s;
     }
-    .bg{
-        transition:  .5s;
-        background-image: url("Photos/bg.jpg");
-    }
-    .black{
-        transition:  .5s;
-        background: rgb(31, 31, 31);
-    }
     #ltsw{
         transition: .1s;
     }
@@ -45,6 +37,8 @@
     }
 </style>
 
+
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name = "description" content = "Homepage of NKH">
@@ -56,53 +50,30 @@
     <title>Hazarika's Homepage</title>
     <link rel="stylesheet" href="CSS/sidenav.css">
     <link rel="stylesheet" type="text/css" href="CSS/mainstyle.css">
-    <script>
-            function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("bdy").style.marginLeft = "300px";
-            document.getElementById("bdy").style.marginRight = "-250px";
-            /*document.getElementById("top").style.marginLeft = "260px";
-            document.getElementById("top").style.marginRight = "-260px";*/
-            }
-
-            function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("bdy").style.marginLeft= "5%";
-            document.getElementById("bdy").style.marginRight = "5%";/*
-            document.getElementById("top").style.marginLeft = "10px";
-            document.getElementById("top").style.marginRight = "0px";*/
-            }
-
-            function darkm() {
-            document.getElementById("bdy").className = "black";
-            document.getElementById("ltsw").style = "display: inline;margin-left: 2%;color:white;text-decoration: none;cursor:pointer;";
-            document.getElementById("drksw").style = "display: none;";
-            /*
-            document.getElementById("ltsw").style = "position: absolute;top: 16px;right: 0px; font-size: 30px; margin-right: 5%; cursor:pointer;visibility:visible;color:white;display:block"*/
-
-            }
-
-            function lightm() {
-            document.getElementById("bdy").className = "bg";
-            document.getElementById("ltsw").style = "display: none;";
-            document.getElementById("drksw").style = "display: inline;margin-left: 2%;color:rgb(31, 31, 31);text-decoration: none;cursor:pointer;";/*
-            document.getElementById("drksw").style = "position: absolute;top: 16px;right: 0px; font-size: 30px; margin-right: 5%; cursor:pointer;visibility:visible;"*/
-            }
-    </script>
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
+<script src="js/script.js">
+    if(localStorage.getItem('black')) {
+         body.classList.add('black');
+    }
+    </script>
 
-<body id="bdy" class="bg" style="margin-left: 5%; margin-right: 5%;">
 
+<body id="bdy" class="black" style="margin-left: 5%; margin-right: 5%;">
+
+    
 	<div id="mySidenav" class="sidenav">
         
 	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
         <img src="Photos/nkh_logo.png" alt="NKH">
-
         <li>
-            <span class="material-symbols-outlined">book</span>
+            <span class="material-symbols-outlined">home</span>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <span href="education.html" class="material-symbols-outlined">book</span>
             <a href="education.html">Education</a>
         </li>
         <li>
@@ -127,15 +98,15 @@
         </li>
 	</div>
 
-
     
     <div id="top" style="margin-left: 10px;display:block;">
-        <span class="nav_button" onclick="openNav()">&#9776;</span>
+        
+        <span id="button" class="nav_button" onclick="openNav()">&#9776;</span>
         <span class="assamese_name" > নৱল কিশোৰ হাজৰিকা</span>
 
-        <div class="switch" ><!--style="background-color:rgba(33, 32, 32,.3 );padding-top: 6px;padding-right: 3px;padding-left: 3px;border-radius: 10px;"-->
-            <span id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined " style="display: none;margin-left: 2%;color:rgb(239, 239, 239);text-decoration: none;" > side_navigation </span>
-            <span id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined " style="display: flex;margin-left: 2%;color:rgb(31, 31, 31);text-decoration: none;cursor:pointer;">side_navigation</span>
+        <div class="switch" >
+            <span id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined " style="display: none;">routine</span>
+            <span id="ltsw" href="javascript:void(0)" onclick="lightm()" class="material-symbols-outlined " style="display: flex;margin-left: 2%;color:rgb(239, 239, 239);text-decoration: none;cursor:pointer;font-size: 30px;" > routine </span>
         </div>
     </div>
 
@@ -147,7 +118,7 @@
         </div>
     
         <div class="txt_img">
-            <header id="head" style="background:rgba(33, 32, 32, 0.30);color:white">
+            <header id="head" >
 
             <div class="tcenter" >
                     <span >Nawal Kishor Hazarika</span>
