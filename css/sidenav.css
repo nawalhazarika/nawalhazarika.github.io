@@ -24,7 +24,7 @@ body {
   font-size:35px;
   cursor:pointer;
   padding: 0px 2px 0px 2px;
-   background-color: rgba(0, 0, 0, 0.394);
+  background-color: rgba(24, 24, 24, 0.431);
   border-radius: 3px;
 }
 
@@ -56,12 +56,12 @@ body {
 .sidenav li span {
 	font-size: 30px;
   padding: 10px 5px 10px 10%;
-  color: inherit;
+  color: white;
 }
 
 .sidenav li a {
     padding: 10px 10px 10px 5%;
-    color: inherit;
+    color: white;
     display: block;
     white-space: wrap;
     text-align: center;
@@ -95,7 +95,7 @@ body {
   right: 20px;
   font-size: 36px;
   margin-left: 50px;
-  color: inherit;
+  color: white;
 }
 
 .sidenav .darkMode {
@@ -119,10 +119,12 @@ body {
     border-radius: 8px;
   }
   .sidenav li span {
+    color: white;
     font-size: 25px;
     padding: 4px 10px 4px 10px;
   }
   .sidenav li a{
+    color: white;
     font-size: 20px;
     padding: 4px 5px 4px 5px;
   }
