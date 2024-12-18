@@ -39,11 +39,9 @@ body {
 .details>span{
     display: flex;
     font-size: 30px;
-    transition: .3s;
 }
 .details>a{
-    display: flex;
-    transition: .3s;
+    display: flex
 }
 
 @media only screen and (max-width: 750px){
