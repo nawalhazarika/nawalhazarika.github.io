@@ -22,7 +22,7 @@ body {
     align-items: center;
     justify-content:stretch;
     transition: .3s;
-    background:rgba(57, 57, 57, 0.746);
+    background:rgba(53, 52, 52, 0.23);
     border-radius: 10px;
     margin-bottom: 10px;
     >img{
@@ -39,12 +39,10 @@ body {
 .details>span{
     display: flex;
     font-size: 30px;
-    color: white;
     transition: .3s;
 }
 .details>a{
     display: flex;
-    color: white;
     transition: .3s;
 }
 
@@ -75,7 +73,6 @@ body {
     font-size: 20px;
     >a{
     display: flex;
-    color: white;
     font-size: 15px;
 }}
 
