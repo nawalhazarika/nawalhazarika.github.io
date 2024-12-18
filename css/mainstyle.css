@@ -71,8 +71,7 @@
   }
 
   .link:hover{
-    color: #ffffff;
-    background-color: rgb(150, 5, 5);
+    color:#047ab1;
     text-decoration: none;
     transition: .2s;
   }
