@@ -23,9 +23,9 @@ body {
 .nav_button{
   font-size:35px;
   cursor:pointer;
-  padding: 0px 2px 0px 2px;
+  /*padding: 0px 2px 0px 2px;
   background-color: rgba(24, 24, 24, 0.431);
-  border-radius: 3px;
+  border-radius: 3px;*/
 }
 
 .sidenav a {
