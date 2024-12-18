@@ -12,13 +12,13 @@
     background-attachment: fixed;
     background-size: cover;
     font-size: 1.7rem;
-    color: rgb(177, 172, 172);
+    color: rgb(1,1,1);
     text-align: justify;
   }
 
   .bg{
       transition:  .2s;
-      background: rgb(147, 147, 147);
+      background: rgb(255, 255, 255);
       color: rgb(35, 35, 35);
   }
   .black{
