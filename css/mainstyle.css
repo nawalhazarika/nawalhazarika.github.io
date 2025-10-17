@@ -37,7 +37,7 @@
 
   .portrait img{
     display:block;
-    float: right;
+    float: left;
     width: 16%;
     background:#047ab1;
     padding: 2px;
@@ -145,4 +145,5 @@
     }
     
   }
+
 
