@@ -61,7 +61,7 @@
 
   .link{
     font-style: bold;
-    color: rgb(250, 100, 0);
+    color: #047ab1;
     text-decoration: none;
     transition: .2s;
   }
@@ -145,6 +145,7 @@
     }
     
   }
+
 
 
 
