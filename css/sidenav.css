@@ -121,7 +121,7 @@ body {
   .sidenav li span {
     color: white;
     font-size: 25px;
-    padding: 4px 10px 4px 10px;
+    padding: 4px 5px 4px 5px;
   }
   .sidenav li a{
     color: white;
@@ -132,3 +132,4 @@ body {
     border-radius: 10px;
   }
 }
+
