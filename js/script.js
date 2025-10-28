@@ -1,16 +1,16 @@
 
     function openNav() {
     document.getElementById("mySidenav").style.width = "210px";
-    document.getElementById("bdy").style.marginLeft = "240px";
+    /*document.getElementById("bdy").style.marginLeft = "240px";
     document.getElementById("bdy").style.marginRight = "-210px";
-    /*document.getElementById("top").style.marginLeft = "260px";
+    document.getElementById("top").style.marginLeft = "260px";
     document.getElementById("top").style.marginRight = "-260px";*/
     }
 
     function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("bdy").style.marginLeft= "5%";
-    document.getElementById("bdy").style.marginRight = "5%";/*
+    /*document.getElementById("bdy").style.marginLeft= "5%";
+    document.getElementById("bdy").style.marginRight = "5%";
     document.getElementById("top").style.marginLeft = "10px";
     document.getElementById("top").style.marginRight = "0px";*/
     }
@@ -37,3 +37,4 @@
 
 
     
+
