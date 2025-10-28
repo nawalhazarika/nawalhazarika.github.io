@@ -18,8 +18,9 @@
 </head>
 <style>
 	.day>p{
-		font-size:15px;
-		padding: 10px 10% 10px 10%;
+		font-size:18px;
+		padding: 15px 10% 15px 10%;
+        line-height: 1.8;
 	}
     .contact{
         margin:2% 15% 20% 15%;
@@ -80,14 +81,24 @@
         </li>
 		<li>
             <span class="material-symbols-outlined">menu_book</span>
-            <a href="Lesson.html">LOTD</a> 
+            <a href="Lesson.html">Journal</a> 
+        </li>        <li>
+            <span class="material-symbols-outlined">palette</span>
+            <a href="Illustration.html">Colours!</a> 
+        </li>
+        <li>
+            <span class="material-symbols-outlined">link</span>
+            <a href="Links.html">Links</a> 
         </li>
     </div>
 
         
     <div id="top" style="margin-left: 10px;display:block;">
         <span id="button" class="nav_button" onclick="openNav()">&#9776;</span>
-        <span  class="assamese_name"> নৱল কিশোৰ হাজৰিকা</span>
+                <div  class="name-container">
+                <span class="assamese_name" > নৱল কিশোৰ হাজৰিকা</span>
+                <span id="assamese_name_message" class="message">My name in Assamese!</span>
+        </div>
 
         <div class="switch" >
             <span id="drksw" href="javascript:void(0)" onclick="darkm()" class="material-symbols-outlined " style="display: none;" >routine</span>
@@ -97,19 +108,21 @@
     
     <div class="day">
 		<h1 class="header" > What did I learn today?</h1>
-       <p>
-		  10/16/25: I learned about Cartier divisors today. If X is a Noetherian, integral, locally factorial, separated scheme, then its class group and the Cartier class group are the same. Since X being integral also implies its Cartier class group and Picard group are the same, we have a complete understanding. I also learned about the class group of a projective space, and any divisor of degree \(d\) will come as a multiple of a hyperplane. 
-	   </p> 
-		<p> 
-			10/17/25: I learned how we define a Cartier divisor if we have an invertible sheaf. We can associate a subscheme, \(Y\) of codimension 1 to an effective Cartier divisor \(D:\{(U_i,f_i)\}\), defined by the sheaf of ideals,\(\mathcal{I}_Y\)  generated locally by \(f_i\)'s. In that case \(\mathcal{I}_Y=\mathcal{L}(-D)\). Also I learned that there are non-singular hypersurfaces of degree \(d\) in \(\mathbb{P}^n\) for large enough \(n\) and for all \(d\geq 1\).</p> 
-		<p>
+        <p>
+			10/27/25: I finished the first three steps of the proof from Lazarsfeld's note that if \(L\) is a non-special line bundle in \(X\), then it satisfies \((N_p)\) if and only if \(H^1(X, \wedge^{p+1}M_L\otimes L^k)=0\) for all \(k\geq 1\). Here \(M_L\) is the kernel bundle.
+		</p>
+        <p>
+			10/25/25: We learned about the cohomology of projective spaces and proved Riemann-Roch using Euler Characteristic.
+		</p>		
+        <p>
 			10/20/25: The kernel bundle is the kernel of the evaluation map which can be obtained by taking the pullback of a twist of the Euler sequence. The kernel bundle for \( \mathcal{O}_{\mathbb{P}^1}(r) \) is \( r \) copies of \( \mathcal{O}_{\mathbb{P}^1}(-1) \).
 		</p>
-
-
-
-
-		
+        <p> 
+			10/17/25: I learned how we define a Cartier divisor if we have an invertible sheaf. We can associate a subscheme, \(Y\) of codimension 1 to an effective Cartier divisor \(D:\{(U_i,f_i)\}\), defined by the sheaf of ideals,\(\mathcal{I}_Y\)  generated locally by \(f_i\)'s. In that case \(\mathcal{I}_Y=\mathcal{L}(-D)\). Also I learned that there are non-singular hypersurfaces of degree \(d\) in \(\mathbb{P}^n\) for large enough \(n\) and for all \(d\geq 1\).
+        </p> 
+        <p>
+		  10/16/25: I learned about Cartier divisors today. If X is a Noetherian, integral, locally factorial, separated scheme, then its class group and the Cartier class group are the same. Since X being integral also implies its Cartier class group and Picard group are the same, we have a complete understanding. I also learned about the class group of a projective space, and any divisor of degree \(d\) will come as a multiple of a hyperplane. 
+	   </p> 
     </div>
 </body>
 </html>
