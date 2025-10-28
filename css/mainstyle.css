@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+  body {
+    font-family: "Plus Jakarta Sans";
+    height: 100vh;
+    margin-top:10px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.7rem;
+    color: rgb(1,1,1);
+    text-align: justify;
+    
+  transition: 0.2s;
+  }
+
+  .bg{
+      transition:  .2s;
+      background: rgb(212, 212, 212);
+      color: rgb(35, 35, 35);
+  }
+  .black{
+      transition:  .2s;
+      background: #212121;
+      color:#fbfbfb;
+  }
+  .dwqe{
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    font-size: 36px;
+    margin-right: 5%;
+    cursor:pointer;
+  }
+
+
+
+  .portrait img{
+    display:block;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+    background:#047ab1;
+  }
+
+  
+.name-container{
+  margin-left: 2%;
+  position: relative; /* Allows absolute positioning of children */
+  display: inline-block; /* Ensures the container wraps the content */
+}
+
+.message {
+  font-size: 15px;
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 20%; /* Align with the top of the name */
+  left: 100%; /* Position to the right of the name */
+  white-space: nowrap;/* Prevents message from wrapping */
+  padding: 5px 10px;
+  background-color: #3333334e;
+  border-radius: 4px;
+  margin-left: 10px; /* Add some space between name and message */
+  z-index: 10; /* Ensure the message appears above other content */
+}
+
+.name-container:hover .message {
+  display: block; /* Show the message on hover */
+}
+  .assamese_name{
+    font-size: 35px;
+  }
+
+  .assamese_name:hover{
+    color:#047ab1;
+    cursor: pointer;
+  }
+
+  .tcenter {
+    text-align: center;
+    font-size:50px;
+  }
+
+  .link{
+    font-style: bold;
+    color: #0291d3;
+    text-decoration: none;
+    transition: .2s;
+  }
+
+  .link:hover{
+    color:rgb(0, 200, 250);
+    text-decoration: none;
+    transition: .2s;
+  }
+
+  .para{
+    font-size:20px;
+    padding:5px;
+  }
+
+
+  .switch{
+    position:relative;
+    margin-top: 15px;
+    float: right;
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    body {
+      position: relative;
+      height: 100vh;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top:10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-size: 1.5rem;
+      color: rgb(22, 22, 22);
+      text-align: justify;
+    }
+
+    .txt_img{
+      margin-top:50%;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+    
+    .portrait img{
+      align-items: center;
+      margin-left: 30%;
+      margin-right: 30%;
+      width: 40%;
+      padding: 1px;
+    }
+
+    .tcenter {
+      text-align: center;
+      font-size:25px;
+    }
+
+    .para{
+      font-size:15px;
+      padding:20px;
+    }
+
+    .nav_button{
+      font-size:30px;
+    }
+
+    .message {
+      left:0%;
+      top:100%;
+    }
+
+    .assamese_name{
+      font-size: 30px ;
+    }
+
+    .switch{
+      margin-top: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+
+    .assamese_name{
+      font-size: 25px ;
+    }
+    
+  }
+
+
+
+
+
+
+
+
