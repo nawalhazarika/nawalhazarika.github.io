@@ -2,7 +2,7 @@
     function openNav() {
     document.getElementById("mySidenav").style.width = "210px";
     document.getElementById("bdy").style.marginLeft = "240px";
-    document.getElementById("bdy").style.marginRight = "30px";
+    document.getElementById("bdy").style.marginRight = "-210px";
     /*document.getElementById("top").style.marginLeft = "260px";
     document.getElementById("top").style.marginRight = "-260px";*/
     }
