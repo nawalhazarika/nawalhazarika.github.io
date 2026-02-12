@@ -1,84 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
-body {
-    font-family: "Plus Jakarta Sans";
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-    background: rgb(31, 31, 31);
-}
-
-.education{
-    margin:2% 15% 20% 15%;
-}
-
-.header{
-    text-align: center;
-}
-
-
-.edu{
+/* ================= EDUCATION PAGE ================= */
+.education {
     display: flex;
-    padding: 15px 40px 15px 40px;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Each education card */
+.edu {
+    display: flex;
+    margin:0 2% 60% 5%;
+    padding: 15px 40px;
     align-items: center;
-    justify-content:stretch;
-    transition: .3s;
-    background:rgba(53, 52, 52, 0.23);
+    justify-content: flex-start;
+    transition: 0.3s;
+    background: var(--card-bg); /* uses main CSS variable */
+    color: var(--text-color);
     border-radius: 10px;
     margin-bottom: 10px;
-    >img{
-        width: 120px;
-        transition: .3s;
-        margin-right: 50px;
-    }
 }
 
-.name{
+/* Image inside card */
+.edu img {
+    width: 120px;
+    height: auto;
+    margin-right: 50px;
+    transition: 0.3s;
+}
+
+/* Names */
+.name {
     font-size: 20px;
+    color: var(--text-color);
 }
 
-.details>span{
-    padding-top:3px;
+/* Details text */
+.details > span,
+.details > a {
+    padding-top: 3px;
     display: flex;
     font-size: 15px;
-}
-.details>a{
-    display: flex;
-    padding-top: 2px;
+    color: var(--text-color);
 }
 
-@media only screen and (max-width: 1000px){
-    body {
-    margin:10px 5% 5% 5%;
-}
-.header{
-    font-size: 30px;
-    text-align: center;
-    padding:4%;
-}
-.education{
-    margin:0 2% 50px 2%;
-}
-.edu{
-    border-radius: 10px;
-    display:block;
-    justify-content: right;
-    >img{
-        width: 20%;
-        margin-left: 40%;
+/* ================= MOBILE ================= */
+@media only screen and (max-width: 1000px) {
+    .edu {
+        display: block;       /* stack image and text */
+        text-align: left;
+        padding: 20px 30px;
     }
-}
 
-.name{
-    font-size: 10px;
-    padding-bottom: 10px;
-}
+    .edu img {
+        width: 30%;          /* responsive width */
+        margin: 0 auto 10px auto;
+        padding: 5px 5px;
+        display: block;
+    }
 
-.details{
-    font-size: 20px;
-    >a{
-    display: flex;
-    font-size: 15px;
-}}
+    .name {
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
 
-
+    .details > span,
+    .details > a {
+        font-size: 14px;
+        display: block;
+        padding-top: 2px;
+    }
 }
