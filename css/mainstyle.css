@@ -197,7 +197,7 @@ main {
   }
 
   .logo-img {
-    width: 30px;
+    width: 0px;
   }
 
   .portrait img {
@@ -216,3 +216,4 @@ main {
     padding: 15px;
   }
 }
+
