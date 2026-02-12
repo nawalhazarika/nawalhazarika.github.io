@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching | Hazarika</title>
+  <link rel="stylesheet" href="css/mainstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<style>
+    .contact{
+        margin:0% 15% 20% 15%;
+    }
+    .address{
+        font-size: 20px;
+        padding: 10px;
+        line-height: 2.2rem;
+    }
+    .icon{
+        width: 20px;
+    }
+    @media only screen and (max-width: 750px){.address{
+        font-size: 18px;
+        line-height: 2rem;
+    }
+    .contact{
+        margin:0 2% 60% 5%;
+    }
+    .icon{
+        width: 16px;
+    }
+    }
+</style>
+<body>
+<header>
+  <div class="header-left">
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <a class="logo" href="home.html">Nawal Kishor Hazarika</a>
+  </div>
+
+  <div class="header-right">
+    <nav id="navMenu">
+      <a href="home.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+      <a href="pdf/CV.pdf">CV</a>
+    </nav>
+    <button class="toggle-btn material-symbols-outlined" onclick="toggleDarkMode()">routine</button>
+  </div>
+</header>
+
+<main>
+  <section id="teaching" class="active">
+    <div class="contact">
+    <div class="header_name">Contact</div> 
+     <p class="address">
+            MSCS 432<br>
+            401 Mathematical Sciences<br>
+            Oklahoma State University<br>
+            Stillwater, OK 74078<br>
+            <img src="Photos/Icon/outlook_icon.png" class="icon" ></img>
+            <a href ="mailto:nawal.hazarika@okstate.edu/" style="color:#0093d8"> nawal.hazarika@okstate.edu</a><br>
+            <img src="Photos/Icon/gmail_icon.png" class="icon" ></img>
+            <a href ="mailto:nkh799@gmail.com/" style="color:rgb(228, 43, 1)"> nkh799@gmail.com</a>
+        </p>
+    </div>
+  </section>
+</main>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
