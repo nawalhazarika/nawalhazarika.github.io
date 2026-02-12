@@ -26,6 +26,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   transition: background 0.3s, color 0.3s;
+  text-align: justify;
 }
 
 /* ================= HEADER ================= */
@@ -216,4 +217,3 @@ main {
     padding: 15px;
   }
 }
-
