@@ -1,13 +1,15 @@
 /* ================= EDUCATION PAGE ================= */
 .education {
     display: flex;
+    flex-direction: column;
     gap: 15px;
     margin-top: 20px;
-    margin:0% 15% 0% 15%;
+    margin:0% 15% 0 15%;
 }
 
 /* Each education card */
 .edu {
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -71,5 +73,3 @@
         padding-top: 2px;
     }
 }
-
-
