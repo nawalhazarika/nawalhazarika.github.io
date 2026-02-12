@@ -7,31 +7,45 @@
   <link rel="stylesheet" href="css/mainstyle.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
+
 <style>
-    .teaching{
-        margin:0% 15% 20% 15%;
-    }
-    .courses{
-        font-size: 20px;
-        padding: 10px;
-        line-height: 2.2rem;
-    }
-    .icon{
-        width: 20px;
-    }
-    @media only screen and (max-width: 750px){
-    .teaching{
-        margin:0 2% 60% 5%;
+/* ================= TEACHING PAGE ================= */
+.teaching {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0% 15% 20% 15%;  /* same as contact */
+}
+
+
+.courses {
+    font-size: 20px;
+    line-height: 2.2rem;
+    padding: 0; /* remove extra padding */
+}
+
+/* icons (if needed) */
+.icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* ================= MOBILE ================= */
+@media only screen and (max-width: 1000px) {
+    .teaching {
+        margin: 0% 15% 20% 15%;  /* same as contact */
     }
     .courses {
         font-size: 18px;
         line-height: 2rem;
     }
-    .icon{
+    .icon {
         width: 16px;
     }
-    }
+}
 </style>
+
 <body>
 <header>
   <div class="header-left">
@@ -54,19 +68,17 @@
 <main>
   <section id="teaching" class="active">
     <div class="teaching">
-    <div class="header_name">Teaching</div> 
-    <hr style="border: 2px solid var(--text-color);">
+      <div class="header_name">Teaching</div> 
+      <div><hr style="border: 2px solid var(--text-color);margin-top: -5px;"></div>
       <ul class="courses">
-			  <li>Mathematical Functions<br>Spring 2025 — OSU</li>
-			  <li>Preparation for Calculus (<i>Two sections</i>)<br>Fall 2025 — OSU</li>
-			  <li>Preparation for Calculus (<i>Two sections</i>)<br>Spring 2026 — OSU</li>
-			</ul>
+        <li>Mathematical Functions<br>Spring 2025 — OSU</li>
+        <li>Preparation for Calculus (<i>Two sections</i>)<br>Fall 2025 — OSU</li>
+        <li>Preparation for Calculus (<i>Two sections</i>)<br>Spring 2026 — OSU</li>
+      </ul>
     </div>
   </section>
 </main>
 
 <script src="js/script.js"></script>
-
-
 </body>
 </html>
