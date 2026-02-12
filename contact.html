@@ -3,35 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teaching | Hazarika</title>
+  <title>Contact | Hazarika</title>
   <link rel="stylesheet" href="css/mainstyle.css">
+  <link rel="stylesheet" href="css/education.css"> <!-- reuse edu styles -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <style>
-    .contact{
-        margin:0% 15% 20% 15%;
+/* ================= CONTACT PAGE ================= */
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0% 15% 20% 15%;
+}
+
+
+
+/* Address text */
+.address {
+    font-size: 20px;
+    line-height: 2.2rem;
+    padding: 0; /* remove extra padding */
+}
+
+/* Icon images */
+.icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* ================= MOBILE ================= */
+@media only screen and (max-width: 1000px) {
+    .contact {
+        margin: 0% 15% 20% 15%;
     }
-    .address{
-        font-size: 20px;
-        padding: 10px;
-        line-height: 2.2rem;
-    }
-    .icon{
-        width: 20px;
-    }
-    @media only screen and (max-width: 750px){.address{
+    .address {
         font-size: 18px;
         line-height: 2rem;
     }
-    .contact{
-        margin:0 2% 60% 5%;
-    }
-    .icon{
+    .icon {
         width: 16px;
     }
-    }
+}
 </style>
+
 <body>
 <header>
   <div class="header-left">
@@ -52,26 +69,24 @@
 </header>
 
 <main>
-  <section id="teaching" class="active">
+  <section class="active">
     <div class="contact">
-    <div class="header_name">Contact</div> 
-    <hr style="border: 2px solid var(--text-color); ">
-     <p class="address">
-            MSCS 432<br>
-            401 Mathematical Sciences<br>
-            Oklahoma State University<br>
-            Stillwater, OK 74078<br>
-            <img src="Photos/Icon/outlook_icon.png" class="icon" ></img>
-            <a href ="mailto:nawal.hazarika@okstate.edu/" style="color:#0093d8"> nawal.hazarika@okstate.edu</a><br>
-            <img src="Photos/Icon/gmail_icon.png" class="icon" ></img>
-            <a href ="mailto:nkh799@gmail.com/" style="color:rgb(228, 43, 1)"> nkh799@gmail.com</a>
-        </p>
+      <div class="header_name">Contact</div>
+      <div><hr style="border: 2px solid var(--text-color); margin-top: -5px;"></div>
+      <p class="address">
+        MSCS 432<br>
+        401 Mathematical Sciences<br>
+        Oklahoma State University<br>
+        Stillwater, OK 74078<br>
+        <img src="Photos/Icon/outlook_icon.png" class="icon">
+        <a href="mailto:nawal.hazarika@okstate.edu" style="color:#0093d8">nawal.hazarika@okstate.edu</a><br>
+        <img src="Photos/Icon/gmail_icon.png" class="icon">
+        <a href="mailto:nkh799@gmail.com" style="color:rgb(228, 43, 1)">nkh799@gmail.com</a>
+      </p>
     </div>
   </section>
 </main>
 
 <script src="js/script.js"></script>
-
-
 </body>
 </html>
