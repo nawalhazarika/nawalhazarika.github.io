@@ -50,7 +50,7 @@ header {
 .header-left .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
   font-weight: 500;
   font-size: 1.7rem;
   margin-left: 10px;
