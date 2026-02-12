@@ -1,16 +1,14 @@
 /* ================= EDUCATION PAGE ================= */
 .education {
     display: flex;
-    flex-direction: column;
     gap: 15px;
     margin-top: 20px;
+    margin:0% 15% 20% 15%;
 }
 
 /* Each education card */
 .edu {
     display: flex;
-    margin:0% 15% 20% 15%;
-    padding: 15px 40px;
     align-items: center;
     justify-content: flex-start;
     transition: 0.3s;
@@ -45,6 +43,9 @@
 
 /* ================= MOBILE ================= */
 @media only screen and (max-width: 1000px) {
+    .education{
+        margin:0% 15% 20% 15%;
+    }
     .edu {
         display: block;       /* stack image and text */
         text-align: left;
