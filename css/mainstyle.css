@@ -292,7 +292,14 @@ footer {
   nav.active {
     display: flex;
   }
-
+  
+  .header-left .logo {
+    font-weight:400;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--header-text);
+  }
   .header-right {
     flex-wrap: wrap;
   }
@@ -313,3 +320,4 @@ footer {
     padding:15px;
   }
 }
+
