@@ -16,8 +16,6 @@ body.light {
 }
 
 /* ================= BODY ================= */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
 body {
   display: flex;
   flex-direction: column;
@@ -42,14 +40,31 @@ header {
   z-index: 10;
 }
 
+/* LEFT SIDE (Hamburger + Photo + Name) */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .header-left .logo {
-  font-weight:400;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 1.7rem;
   margin-left: 10px;
   text-decoration: none;
   color: var(--header-text);
 }
 
+.logo-img {
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* RIGHT SIDE */
 .header-right {
   display: flex;
   font-size: 1.2rem;
@@ -59,7 +74,7 @@ header {
 
 .toggle-btn {
   background: transparent;
-  border: 1px ;
+  border: none;
   color: var(--header-text);
   padding: 0.3rem 0.6rem;
   border-radius: 20px;
@@ -71,7 +86,7 @@ header {
   opacity: 0.8;
 }
 
-/* Navigation */
+/* ================= NAVIGATION ================= */
 nav {
   display: flex;
   gap: 1rem;
@@ -82,7 +97,6 @@ nav a {
   text-decoration: none;
   font-weight: 500;
   position: relative;
-  cursor: pointer;
 }
 
 nav a::after {
@@ -100,20 +114,18 @@ nav a:hover::after {
   width: 100%;
 }
 
-.link{
-    font-style: bold;
-    color: #0291d3;
-    text-decoration: none;
-    transition: .2s;
-  }
+/* ================= LINKS ================= */
+.link {
+  color: #0291d3;
+  text-decoration: none;
+  transition: .2s;
+}
 
-  .link:hover{
-    color:rgb(0, 200, 250);
-    text-decoration: none;
-    transition: .2s;
-  }
+.link:hover {
+  color: rgb(0, 200, 250);
+}
 
-/* Hamburger button */
+/* ================= HAMBURGER ================= */
 .menu-btn {
   display: none;
   font-size: 1.5rem;
@@ -122,32 +134,6 @@ nav a:hover::after {
   color: var(--header-text);
   cursor: pointer;
 }
-/* ================= LOGO HOVER MESSAGE =================
-.name-container {
-  position: relative;
-  display: inline-block;
-}
-.message {
-  font-size: 15px;
-  display: none; 
-  position: absolute;
-  top: 20%; 
-  left: 100%; 
-  white-space: nowrap;
-  padding: 5px 10px;
-  background-color: #3333334e;
-  border-radius: 4px;
-  margin-left: 10px; 
-  z-index: 10; 
-}
-
-.name-container:hover .message {
-  display: block;
-
-.assamese_name:hover{
-    color:#047ab1;
-    cursor: pointer;
-}*/
 
 /* ================= MAIN ================= */
 main {
@@ -156,120 +142,27 @@ main {
   margin: 1.5rem auto;
   padding: 0.5rem 1rem;
   background: var(--bg-color);
-  border-radius: 0;
-  box-shadow: none;
-  overflow: auto;
 }
 
-/* ================= PORTRAIT ================= */
 .portrait img {
   width: 350px;
-  height: auto;
   float: left;
   margin: 1.5rem 20px 10px 0;
   border-radius: 6px;
 }
 
-.portrait-text {
-  flex: 1;
-}
-
 .header_name {
   text-align: center;
-  font-size:50px;
-}
-.para{
-  font-size:20px;
+  font-size: 50px;
 }
 
-/* ================= EDUCATION PAGE ================= */
-.education {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.edu {
-    display: flex;
-    padding: 15px 40px;
-    align-items: center;
-    justify-content: flex-start;
-    transition: 0.3s;
-    background: var(--card-bg);
-    color: var(--text-color);
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.edu img {
-    width: 120px;
-    height: auto;
-    margin-right: 50px;
-    transition: 0.3s;
-}
-
-.name {
-    font-size: 20px;
-    color: var(--text-color);
-}
-
-.details > span,
-.details > a {
-    padding-top: 3px;
-    display: flex;
-    font-size: 15px;
-    color: var(--text-color);
-}
-
-/* ================= SECTIONS ================= */
-section {
-  display: none;
-  padding: 1rem;
-  text-align: justify;
-}
-
-section.active {
-  display: block;
-}
-
-/* ================= FOOTER ================= */
-footer {
-  text-align: center;
-  padding: 0.5rem 1rem;
-  background: var(--header-bg);
-  color: var(--header-text);
-  margin-top: 0;
+.para {
+  font-size: 20px;
 }
 
 /* ================= MOBILE ================= */
-@media (max-width: 1000px) {
-    .edu {
-        display: block;
-        text-align: center;
-        padding: 10px 20px;
-    }
-
-    .edu img {
-        width: 60%;
-        margin: 0 auto 10px auto;
-        display: block;
-    }
-
-    .name {
-        font-size: 16px;
-        padding-bottom: 5px;
-    }
-
-    .details > span,
-    .details > a {
-        font-size: 14px;
-        display: block;
-        padding-top: 2px;
-    }
-}
-
 @media (max-width: 768px) {
+
   .menu-btn {
     display: inline;
   }
@@ -286,38 +179,40 @@ footer {
     border-radius: 6px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     z-index: 50;
-    width: max-content;
   }
 
   nav.active {
     display: flex;
   }
 
+  /* Adjust header spacing on phone */
+  .header-left {
+    gap: 8px;
+  }
+
   .header-left .logo {
-    font-weight:400;
+    gap: 6px;
     font-size: 1.5rem;
-    margin-left: 10px;
-    text-decoration: none;
-    color: var(--header-text);
+    margin-left: 5px;
   }
 
-  .header-right {
-    flex-wrap: wrap;
+  .logo-img {
+    width: 30px;
   }
 
-  /* Portrait stacked on mobile */
   .portrait img {
     float: none;
     display: block;
     margin: 0 auto 10px auto;
     width: 60%;
   }
+
   .header_name {
-    text-align: center;
-    font-size:30px;
+    font-size: 30px;
   }
-  .para{
-    font-size:18px;
-    padding:15px;
+
+  .para {
+    font-size: 18px;
+    padding: 15px;
   }
 }
