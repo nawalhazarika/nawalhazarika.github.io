@@ -3,7 +3,7 @@
     display: flex;
     gap: 15px;
     margin-top: 20px;
-    margin:0% 15% 20% 15%;
+    margin:0% 15% 0% 15%;
 }
 
 /* Each education card */
@@ -71,4 +71,5 @@
         padding-top: 2px;
     }
 }
+
 
