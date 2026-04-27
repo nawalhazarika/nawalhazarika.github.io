@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching | Hazarika</title>
+  <link rel="stylesheet" href="css/mainstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<style>
+/* ================= TEACHING PAGE ================= */
+.teaching {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0% 15% 0 15%;  /* same as contact */
+}
+
+
+.courses {
+    font-size: 20px;
+    line-height: 2.2rem;
+    padding: 0; /* remove extra padding */
+}
+
+/* icons (if needed) */
+.icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* ================= MOBILE ================= */
+@media only screen and (max-width: 1000px) {
+    .teaching {
+        margin: 0% 5% 0 5%;  /* same as contact */
+    }
+    .courses {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+    .icon {
+        width: 16px;
+    }
+}
+</style>
+
+<body>
+<header>
+  <div class="header-left">
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <a class="logo">
+    <img src="Photos/logo.png" alt="NKH" class="logo-img">
+    <span>Nawal Kishor Hazarika</span>
+    </a>
+  </div>
+
+  <div class="header-right">
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="research.html">Education</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="contact.html">Contact</a>
+      <a href="pdf/CV.pdf">CV</a>
+    </nav>
+    <button class="toggle-btn material-symbols-outlined" onclick="toggleDarkMode()">routine</button>
+  </div>
+</header>
+
+<main>
+  <section id="teaching" class="active">
+    <div class="teaching">
+      <div class="header_name">Research</div> 
+      <div><hr style="border: 2px solid var(--text-color);margin-top: -5px;"></div>
+      <ul class="courses">
+        <li><(with P.P. Sarmah) \textbf{On Some Localizations and Their Relation to Quotients}. \textit{The American Mathematical Monthly}, 131(4): 335–342, 2024. DOI: 10.1080/00029890.2023.2293615./li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
