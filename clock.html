@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Clock</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      padding: 30px;
+    }
+
+    #clock {
+      font-size: clamp(90px, 16vw, 230px);
+      font-weight: 700;
+      letter-spacing: 4px;
+      line-height: 1;
+    }
+
+    #date {
+      margin-top: 25px;
+      font-size: clamp(24px, 3vw, 45px);
+      opacity: 0.8;
+    }
+
+    .divider {
+      width: 70%;
+      max-width: 900px;
+      height: 2px;
+      background: #444;
+      margin: 45px auto;
+    }
+
+    .exam-label {
+      font-size: clamp(22px, 2.5vw, 38px);
+      opacity: 0.75;
+      margin-bottom: 10px;
+    }
+
+    #timer {
+      font-size: clamp(65px, 10vw, 150px);
+      font-weight: bold;
+    }
+
+    .controls {
+      margin-top: 40px;
+    }
+
+    input,
+    button {
+      font-size: 18px;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 7px;
+      border: none;
+    }
+
+    input {
+      width: 100px;
+      text-align: center;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .hint {
+      margin-top: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* Hide controls in fullscreen */
+    :fullscreen .controls,
+    :fullscreen .hint {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Current Time -->
+  <div id="clock">12:00:00 PM</div>
+  <div id="date"></div>
+
+  <div class="divider"></div>
+
+  <!-- Countdown -->
+  <div class="exam-label">TIME REMAINING</div>
+  <div id="timer">50:00</div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <input
+      type="number"
+      id="minutes"
+      value="50"
+      min="1"
+      placeholder="Minutes"
+    >
+
+    <button onclick="startTimer()">Start Exam</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+    <button onclick="goFullscreen()">Fullscreen</button>
+  </div>
+
+  <div class="hint">
+    Set the exam duration, click Start Exam, then Fullscreen.
+  </div>
+
+</div>
+
+
+<script>
+
+  /* =========================
+     CURRENT CLOCK
+     ========================= */
+
+  function updateClock() {
+
+    const now = new Date();
+
+    const time = now.toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "2-digit",
+      second: "2-digit"
+    });
+
+    const date = now.toLocaleDateString("en-US", {
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+      year: "numeric"
+    });
+
+    document.getElementById("clock").textContent = time;
+    document.getElementById("date").textContent = date;
+  }
+
+  updateClock();
+
+  setInterval(updateClock, 1000);
+
+
+
+  /* =========================
+     EXAM COUNTDOWN
+     ========================= */
+
+  let remainingSeconds = 50 * 60;
+  let timerInterval = null;
+  let running = false;
+
+
+  function displayTimer() {
+
+    let minutes = Math.floor(remainingSeconds / 60);
+    let seconds = remainingSeconds % 60;
+
+    document.getElementById("timer").textContent =
+      String(minutes).padStart(2, "0") +
+      ":" +
+      String(seconds).padStart(2, "0");
+  }
+
+
+  function startTimer() {
+
+    if (running) return;
+
+    running = true;
+
+    timerInterval = setInterval(function () {
+
+      if (remainingSeconds > 0) {
+
+        remainingSeconds--;
+
+        displayTimer();
+
+      } else {
+
+        clearInterval(timerInterval);
+        running = false;
+
+        document.getElementById("timer").textContent = "TIME";
+
+      }
+
+    }, 1000);
+
+  }
+
+
+  function pauseTimer() {
+
+    clearInterval(timerInterval);
+    running = false;
+
+  }
+
+
+  function resetTimer() {
+
+    clearInterval(timerInterval);
+    running = false;
+
+    const minutes =
+      parseInt(document.getElementById("minutes").value) || 50;
+
+    remainingSeconds = minutes * 60;
+
+    displayTimer();
+
+  }
+
+
+  document
+    .getElementById("minutes")
+    .addEventListener("change", resetTimer);
+
+
+
+  /* =========================
+     FULLSCREEN
+     ========================= */
+
+  function goFullscreen() {
+
+    document.documentElement.requestFullscreen();
+
+  }
+
+
+  displayTimer();
+
+</script>
+
+</body>
+</html>
